@@ -91,3 +91,49 @@ Example Response:
   "price": 15.99
 }
 ```
+## Completed Features
+
+- Loads all plants from the backend when the app starts using `useEffect` and a GET request.
+- Displays each plant's image, name, and price.
+- Adds new plants through the form using a POST request.
+- Updates the displayed list after a plant is saved.
+- Toggles each plant between "In Stock" and "Out of Stock".
+- Filters plants by name using a case-insensitive search.
+- Displays all plants again when the search field is cleared.
+
+New plants persist after refreshing the page. Stock status is managed locally in React state and resets when the page reloads.
+
+## Technologies Used
+
+- React
+- JavaScript and JSX
+- CSS
+- Vite
+- JSON Server
+- Vitest and React Testing Library
+
+## Testing
+
+Run the tests in watch mode:
+
+```bash
+npm run test
+```
+
+Run the full test suite once:
+
+```bash
+npm run test -- --run
+```
+
+All included tests passed. Browser checks also confirmed plant loading, searching, stock status changes, and saving new plants.
+
+## Completed Application
+
+![Completed Plantsy application](./screenshots/plant-shop.png)
+
+## Author
+
+Ashley Lopez
+
+Completed as part of my Cyber Engineering coursework.
